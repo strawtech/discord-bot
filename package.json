@@ -1,0 +1,22 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "axios": "^0.19.2",
+    "discord.js": "^12.2.0",
+    "esm": "^3.2.25",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.2.5",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^2.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node -r esm index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
