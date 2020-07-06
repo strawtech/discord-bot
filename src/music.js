@@ -91,7 +91,6 @@ export function skip(message, id) {
 	if (!serverQueue) {
 		return message.channel.send("There is no song that I could skip");
 	}
-	console.log(serverQueue.connection.dispatcher)
 	if (serverQueue.connection && serverQueue.connection.dispatcher) {
 		serverQueue.connection.dispatcher.end();
 	}

@@ -23,12 +23,8 @@ client.on('message', async message => {
 	if (!message.content.startsWith(prefix)) return;
 
 	const found = commands.find((command) => {
-		console.log(command)
-		console.log(message.content)
 		return message.content.startsWith(`${prefix}${command.name}`)
 	})
-
-	console.log(found)
 
 	found ? found.callback(message, message.guild.id) : message.channel.send("You need to enter a valid command!")
 
